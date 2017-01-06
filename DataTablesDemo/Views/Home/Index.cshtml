@@ -1,0 +1,25 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+    ViewBag.InitModule = "homeCustomers"; <!--Name of the Angular module for the Page -->
+}
+
+@section scripts{
+    <script src="~/Scripts/angular-resource.js"></script>
+    <script src="~/Scripts/DataTables-1.10.4/jquery.dataTables.js"></script>
+
+    <script src="~/Scripts/AngularDatatables/angular-datatables.js"></script>
+    <script src="~/Scripts/AngularDatatables/angular-datatables.util.js"></script>
+    <script src="~/Scripts/AngularDatatables/angular-datatables.options.js"></script>
+    <script src="~/Scripts/AngularDatatables/angular-datatables.instances.js"></script>
+    <script src="~/Scripts/AngularDatatables/angular-datatables.factory.js"></script>
+    <script src="~/Scripts/AngularDatatables/angular-datatables.renderer.js"></script>
+    <script src="~/Scripts/AngularDatatables/angular-datatables.directive.js"></script>
+    
+    <script src="~/Scripts/DataTables-1.10.4/dataTables.bootstrap.js"></script>
+    <script src="~/Scripts/Custom/home-customers.js"></script>
+
+    
+}
+
+<!-- The client side (Angular) view is injected here -->
+<div data-ng-view=""></div>
